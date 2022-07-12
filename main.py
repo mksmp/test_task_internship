@@ -16,3 +16,4 @@ while True:
     proxies = {'http': proxy_arr[index_proxy], 'https': proxy_arr[index_proxy]} # Берем рандомный прокси по индексу
 
     check_connection(proxies, now, headers)
+    
