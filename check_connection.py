@@ -102,6 +102,7 @@ def check_connection(proxies, now, headers):
     #     request_urlsb_mob = None       
 
 
+
     if request_pochta is None or int(request_pochta) != 200:
         print(now, request_pochta, "Почта Банк")
     if request_pochta_mob is None or int(request_pochta_mob) != 200:
