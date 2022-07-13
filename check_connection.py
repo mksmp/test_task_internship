@@ -19,13 +19,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_pochta == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('Почта Банк', now, ' - up')
             check_pochta = True
 
         else:
             if check_pochta == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('Почта Банк', now, ' - down')
             check_pochta = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('Почта Банк не отвечает больше 10 секунд')
@@ -42,13 +42,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_fin == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('Финам банк', now, ' - up')
             check_fin = True
 
         else:
             if check_fin == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('Финам банк', now, ' - down')
             check_fin = False    
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('Финам банк не отвечает больше 10 секунд')
@@ -65,16 +65,16 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_urlsb == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('Уралсиб', now, ' - up')
             check_urlsb = True
 
         else:
             if check_urlsb == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('Уралсиб', now, ' - down')
             check_urlsb = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
-        print('Банк России не отвечает больше 10 секунд')
+        print('Уралсиб не отвечает больше 10 секунд')
         request_urlsb = None
     except requests.exceptions.ProxyError:
         print('Не удалось подключиться к proxy. Переподключение')
@@ -88,13 +88,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_expo == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('Экспо', now, ' - up')
             check_expo = True
 
         else:
             if check_expo == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('Экспо', now, ' - down')
             check_expo = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('Экспо не отвечает больше 10 секунд')
@@ -111,13 +111,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_vtb == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('ВТБ', now, ' - up')
             check_vtb = True
 
         else:
             if check_vtb == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('ВТБ', now, ' - down')
             check_vtb = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('ВТБ не отвечает больше 10 секунд')
@@ -134,13 +134,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_pochta_mob == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('Почта Банк для мобильного сервера', now, ' - up')
             check_pochta_mob = True
 
         else:
             if check_pochta_mob == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('Почта Банк для мобильного сервера', now, ' - down')
             check_pochta_mob = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('Почта Банк для мобильного сервера не отвечает больше 10 секунд')
@@ -157,13 +157,13 @@ def check_connection(proxies, now, headers):
         if int() == 200:
             if check_vtb_mob == False:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - up')
+                    file.write('ВТБ мобайл', now, ' - up')
             check_vtb_mob = True
 
         else:
             if check_vtb_mob == True:
                 with open(date + ".txt", "w+") as file:
-                    file.write('', now, ' - down')
+                    file.write('ВТБ мобайл', now, ' - down')
             check_vtb_mob = False
     except requests.exceptions.ConnectTimeout or requests.exceptions.ReadTimeout:
         print('ВТБ мобайл не отвечает больше 10 секунд')
