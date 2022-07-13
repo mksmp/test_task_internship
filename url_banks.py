@@ -5,6 +5,6 @@ url_fin_mob = "https://api.faktura.ru/" # dns сервера - mobws.faktura.ru
 url_urlsb = "https://www.uralsib.ru/"
 url_urlsb_mob = "https://new.uralsib.ru/"
 url_expo = "https://expobank.ru/"
-url_expo_mob = ""
+url_expo_mob = " "
 url_vtb = "https://www.vtb.ru/"
 url_vtb_mob = "https://vtbmobile.ru/#/"
